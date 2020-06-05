@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="senha.js"></script>
+	
+</head>
+
+<body>
+	<header>
+
+	<h3>SGS - Sistema de Gerenciamento de Senhas</h3>
+	<h4> Por favor, retire aqui sua senha e aguarde a sua vez!</h4>
+	
+	
+	
+	<div class="corpo">
+		<div class="atendimento">
+			<div class="pai">
+				<div id="senha" >Balcão 1 G-A</div>
+				<div id="senhaa" >Balcão 2 G-A</div>
+				<div id="senhab" >Balcão 3 G-A</div>
+				<div id="senhac" >Balcão 4 P-A</div>
+			</div>
+			<div class="pai">
+				<div class="senha_balcao" onclick="BtAtend('senha')"><p>Balcão 1</p></div>
+				<div class="senha_balcao" onclick="BtAtend('senhaa')"><p>Balcão 2</p></div>
+				<div class="senha_balcao" onclick="BtAtend('senhab')"><p>Balcão 3</p></div>
+				<div class="senha_balcao" onclick="BtAtend('senhac')"><p>Balcão 4</p></div>
+			</div>
+		</div>
+
+		<div class = "atendimento2">
+			<div class="pai">
+				<div id ="senha_prio" >Prioridade  A00</div>
+				<div id ="senha_geral" >  <p> Geral A00</p> </div>
+			</div>
+			<div class="pai">
+				<div id="senha_prioBt" class="senha_balcao" value="1" onclick="BtPrio()" >Senha Prioritária</div>
+				<div id="senha_geralBt" class="senha_balcao" value="2" onclick="BtGeral()" >SENHA GERAL</div>
+			</div>
+		</div>
+	</div>
+	</header>
+
+	
+</body>
+</html>
